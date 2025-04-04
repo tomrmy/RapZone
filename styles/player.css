@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.player-section {
+    text-align: center;
+    padding: 100px 20px;
+    flex-grow: 1;
+    background-color: #181818;
+}
+
+.player-section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.player-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.radio-player {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.player-container p {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.player-container a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.player-container a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #999;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 5px 0 15px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socials a {
+    color: #f39c12;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .player-section {
+        padding: 60px 20px;
+    }
+
+    .player-section h1 {
+        font-size: 30px;
+    }
+
+    .player-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .radio-player {
+        height: 150px;
+    }
+
+    .player-container p {
+        font-size: 0.85em;
+    }
+
+    .player-container a {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
